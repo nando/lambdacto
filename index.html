@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- Copyright 2016 The Cocktail Experience, S.L. -->
+<html lang="es-ES">
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <link href="favicon.ico" rel="icon" type="image/ico" />
+  <title>The Cocktail Lambdacto</title>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="javascript/lambdacto.js"></script>
+</head>
+<body>
+  <h1>The Cocktail Lambdacto</h1>
+  <form id="contact-form">
+    <div>
+      <label>Dominio</label>
+      <select name="domain">
+        <option>the-cocktail.com</option>
+        <option>thecocktailventures.com</option>
+      </select>
+    </div>
+    <div>
+      <label>Nombre de contacto</label>
+      <input type="text" name="name" required="required" />
+    </div>
+    <div>
+      <label>Empresa</label>
+      <input type="text" name="company" required="required" />
+    </div>
+    <div>
+      <label>Teléfono</label>
+      <input type="number" name="phone" class="phone" required="required" />
+    </div>
+    <div>
+      <label>Mail</label>
+      <input type="email" name="email" required="required" />
+    </div>
+    <div>
+      <label>¿En qué podemos ayudarte?</label>
+      <textarea name="message" required="required"></textarea>
+    </div>
+    <div>
+      <button type="submit" class="btn">
+        Enviar
+      </button>
+      <span class="result"></span>
+    </div>
+  </form>
+</body>
+</html>
