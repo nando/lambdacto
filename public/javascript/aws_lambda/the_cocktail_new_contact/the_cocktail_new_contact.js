@@ -42,6 +42,10 @@ exports.handler = function(event, context) {
     ReplyToAddresses: [ email ]
   };
 
+  if ((event.cc) && (event.cc == "1")) {
+    params.Destination.CcAddresses = [ event.email ];
+  }
+
   ses.sendEmail(params, function(err, data) {
     if (err) {
       console.log(err, err.stack);
